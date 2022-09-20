@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,600&display=swap" rel="stylesheet">
+	<title>Crypto Survey!</title>
+</head>
+<body>
+  <h1 id="title">Crypto Survey!</h1>
+   <p id="description">A brief survey on your crypto preferences</p>
+   <form id="survey-form" class="survey-form">
+     <fieldset>
+       <label id="name-label">Enter Your Full Name Here: <input id="name" name="name" type="text" placeholder="enter your name here" required /></label>
+       <label id="email-label">Enter Your Email Here: <input id="email" name="email" type="email" placeholder="enter your email" required /></label>
+       <label id="number-label">Enter Your Age: <input id="number" name="number" type="number" placeholder="age" min="13" max="120">
+       <label for="dropdown">Your Gender
+       <select id="dropdown" name="dropdown">
+         <option value="">Select one</option>
+         <option value="1">Male</option>
+         <option value="2">Female</option>
+         <option value="3">Other</option>
+       </select>
+   </fieldset>
+   <fieldset>
+       <h2>What type of crypto investor are you?</h2>
+       <label for="hodler"><input id="hodler" type="radio" name="investortype" value="hodler" />Hodler</label>
+       <label for="paperhands"><input id="paperhands" type="radio" name="investortype" value="paperhands" />Paperhands</label>
+     </fieldset>
+     <fieldset>
+       <label for="favoritecrypto">Check all the crypto you think has potential:
+         <input id="crypto1" type="checkbox" name="crypto" value="bitcoin">BitCoin</label>
+       <input id="crypto2" type="checkbox" name="crypto" value="ethereum">Ethereum</label>
+       <input id="crypto3" type="checkbox" name="crypto" value="cardano">Cardano</label>
+       <input id="crypto4" type="checkbox" name="crypto" value="solana">Solana</label>
+       <input id="crypto5" type="checkbox" name="crypto" value="dogecoin">Dogecoin
+       </label>
+     </fieldset>
+     <fieldset>
+       <label for="cryptofuture">Tell us what you think about the future of crypto!
+       <textarea></textarea>
+       </label>
+     </fieldset>
+     <input id="submit" type="submit" value="Submit" />
+   </form>
+</body>
+</html>
